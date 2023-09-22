@@ -1,21 +1,12 @@
-import { CriarPensamentoComponent } from './componentes/pensamentos/criar-pensamento/criar-pensamento.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'listarPensamento',
-    pathMatch: 'full'
-  },
-  {
-    path: 'criarPensamento',
-    component: CriarPensamentoComponent
-  },
-  {
-    path: 'listarPensamento',
-    component: ListarPensamentoComponent
+    component: HomeComponent
   }
 ];
 
